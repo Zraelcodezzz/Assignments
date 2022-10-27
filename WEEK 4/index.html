@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+
+    <title>css flexbox</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+
+        @import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+
+
+
+
+        .flex-container {
+            display: flex;
+            border-radius: 20px;
+            box-sizing: border-box;
+            justify-content: center;
+            width: 1440px;
+            align-items: center;
+            height: 90vh;
+            width: 100%;
+        }
+
+        @media (max-width:600px) {
+            .flex-container {
+                flex-direction: column;
+
+            }
+
+        }
+
+        .flex-container .item1 {
+            background-color: hsl(31, 77%, 52%);
+            width: 280px;
+            border-radius: 5px 0px 0px 5px;
+            padding: 20px;
+        }
+
+        .flex-container .item2 {
+            background-color: hsl(184, 100%, 22%);
+            width: 280px;
+            padding: 20px;
+
+        }
+
+
+        .flex-container .item3 {
+            background-color: hsl(179, 100%, 13%);
+            width: 280px;
+            border-radius: 0px 5px 5px 0px;
+            padding: 20px;
+        }
+
+
+
+        .flex-container>div .type {
+            color: hsl(0, 0%, 95%);
+            font-family: 'Big Shoulders Display', cursive;
+            font-size: 30px;
+
+        }
+
+
+        .flex-container>div .desc {
+            color: hsla(0, 0%, 100%, 0.75);
+            font-size: 15px;
+            margin-bottom: 55px;
+            margin-top: 20px;
+            font-family: 'Lexend Deca', sans-serif;
+            line-height: 25px;
+
+
+        }
+
+
+        .flex-container .butn {
+            background-color: hsl(0, 0%, 95%);
+            border-radius: 60px;
+            color: hsl(31, 77%, 52%);
+            border: none;
+            outline: none;
+            padding: 10px 20px;
+        }
+
+        .flex-container .butn:hover {
+            background-color: hsl(31, 77%, 52%);
+            color: hsl(0, 0%, 95%);
+            border: 2px solid;
+
+        }
+
+
+
+        .flex-container .butv {
+            background-color: hsl(0, 0%, 95%);
+            border-radius: 60px;
+            color: hsl(184, 100%, 22%);
+            border: none;
+            outline: none;
+            padding: 10px 20px;
+
+        }
+
+
+
+        .flex-container .butv:hover {
+            background-color: hsl(184, 100%, 22%);
+            color: hsl(0, 0%, 95%);
+            border: 2px solid;
+
+        }
+
+
+        .flex-container .butr {
+            background-color: hsl(0, 0%, 95%);
+            border-radius: 60px;
+            color: hsl(179, 100%, 13%);
+            border: none;
+            outline: none;
+            padding: 10px 20px;
+
+        }
+
+        .flex-container .butr:hover {
+            background-color: hsl(179, 100%, 13%);
+            color: hsl(0, 0%, 95%);
+            border: 2px solid;
+
+        }
+
+
+        .grid {
+            background-color: hsl(179, 100%, 13%);
+            color: hsl(0, 0%, 95%);
+            border: 2px solid hsl(31, 77%, 52%);
+            margin: 2vh;
+            height: 50px;
+            font-size: large;
+            font-weight: 800;
+
+
+
+        }
+    </style>
+    </style>
+</head>
+
+<body>
+
+
+    <div class="flex-container">
+
+        <div class="item1">
+            <img src="icon-sedans__1_-1.svg">
+            <h2 class="type">SEDANS</h2>
+
+            <p class="desc">Choose a sedan for its affordability and excellent fuel economy.Ideal for
+                cruising in the
+                city or on your
+                next road trip.</p>
+            <button class="butn">Learn More</button>
+        </div>
+        <div class="item2">
+            <img src="icon-suvs.svg">
+            <h2 class="type">SUVS</h2>
+            <p class="desc">Take an SUV for its spacious interior,power and versatility.Perfect for your next famiy
+                vacation and
+                off-road adventures.</p>
+            <button class="butv">Learn More</button>
+        </div>
+        <div class="item3">
+            <img src="icon-luxury.svg">
+            <h2 class="type">LUXURY</h2>
+            <p class="desc">Cruise in the best car brands without the bloated prices .Enjoy the enhanced comfort of a
+                luxury rental
+                and arrive int style.</p>
+            <button class="butr">Learn More</button>
+        </div>
+
+
+
+
+
+    </div>
+
+
+    <a href="grid.html"><button class="grid">Go to GRID</button></a>
+
+
+</body>
+
+</html>
